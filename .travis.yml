@@ -2,6 +2,10 @@ language: python
 python:
     - "2.7"
 
+branches:
+    only:
+        - develop
+
 install:
     - echo '3\n' | sudo python ./install/install.py
     - rm -rf ./tests
