@@ -3,9 +3,9 @@ python:
     - "2.7"
 
 install:
-    - echo '3\n' | sudo python2 ./install/install.py
+    - echo '3\n' | sudo python ./install/install.py
     - rm -rf ./tests
     - git clone https://github.com/owtf/owtf_testing tests
 
 script:
-    - sudo python2 -m unittest discover -s ./tests/tests_functional/cli -p "test_empty.py"
+    - sudo python -m unittest discover -s ./tests/tests_functional/cli -p "test_empty.py"
