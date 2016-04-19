@@ -11,7 +11,7 @@ import sys
 import logging
 from framework.dependency_check import verify_dependencies
 
-verify_dependencies(os.path.dirname(os.path.abspath(sys.argv[0])) or '.')
+#verify_dependencies(os.path.dirname(os.path.abspath(sys.argv[0])) or '.')
 
 
 from framework.core import Core
